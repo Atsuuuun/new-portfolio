@@ -7,6 +7,47 @@ body {
   overflow-x: hidden;
 }
 
+
+/*-------------------------------------
+opening-animation
+--------------------------------------*/
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.opening{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opening__mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.opening__logo{
+  display: block;
+  width: 450px;
+  height: 500px;
+  z-index: 2;
+  clip-path: inset(0 100% 0 0);/*予め切り取り*/
+  transform: scale(1.1);/*予め大きくしておく*/
+  opacity: 0;/*予め透明に*/
+}
+
 /*------------------------------------
 progress-bar
 ------------------------------------*/
@@ -47,6 +88,7 @@ menu-content
 .menu-container{
   width: 100%;
   overflow: hidden;
+  z-index: 999;
 }
 /*=======ここまでは見た目を整えるための記述======*/
 
@@ -92,6 +134,7 @@ menu-content
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
+  z-index: 98;
 }
 
 .header-menu.is-active{
@@ -197,7 +240,7 @@ loop-text
 .loop03__item {
   font-family: "Libre Baskerville", serif;
   flex: 0 0 auto;
-  font-size: 10em;
+  font-size: 7em;
   white-space: nowrap;
   padding-right: 25px;
   padding-left: 25px;
@@ -262,7 +305,7 @@ scroll-text
 }
 
 .scroll-text {
-  font-size: 3em;
+  font-size: 2em;
   color: #b2b2b2;
   font-weight: bold;
   line-height: 1em;
@@ -437,7 +480,7 @@ slide-scroll
 
 .panel {
   width: 100vw;
-  height: 100%;
+  height: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
