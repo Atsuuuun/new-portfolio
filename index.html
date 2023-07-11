@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<!-----------------------------------
+    <section class="container">
+        <div class="opening">
+            <span class="opening__mask"></span>
+            <img class="opening__logo" src="img/opening_logo.png" alt="">
+        </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="opening-animation.js"></script>
+  </section>  
+    <!-----------------------------------
 progress-bar    
 ------------------------------------->
     <progress class="scroll-indicator" max="100" value=""></progress>
@@ -16,7 +25,7 @@ progress-bar
 <!-----------------------------------
 menu-content  
 ------------------------------------->
-<div class="menu-container">
+<section class="menu-container">
     <header class="header">
         <button class="header-menu-trigger">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -42,13 +51,12 @@ menu-content
     </header>
     <section class="section">
     </section>
-</div>
+</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="menu-content.js"></script>
 
 <!-----------------------------------
 percentage-circle
-------------------------------------->
     <main class="container-percentageCircle">
         <div class="box">
             <svg width="300" height="300">
@@ -66,6 +74,7 @@ percentage-circle
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+------------------------------------->
 
 
 <!-----------------------------------
@@ -92,8 +101,10 @@ loop-text
 scroll-text
 ------------------------------------->
     <div class="container-scrollText">
-         <p class="scroll-text wipeAnimation">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore praesentium neque tenetur modi, dolor voluptate porro  <span>libero tempore quam. </span>Est non dolor, corrupti repellendus dolorem voluptates asperiores reiciendis totam esse.</p>
+         <p class="scroll-text wipeAnimation"> I am working as a photographer while focusing on web design. We also develop apparel brands and do all designs. I also have experience in designing business cards and creating posters. With the <span>"Seek, farewell and it will be given to you"</span>, we are working with of continuing to seek and move on our own. </p>
+         <p class="scroll-text wipeAnimation">私はWebデザインを主力としつつ、カメラマンとしての活動をしております。また、アパレルブランドを展開しており全てのデザインをしております。名刺のデザインやポスターの制作も経験があります。<span>「求めよ、さらば与えられん」</span>の言葉を座右の銘に、自ら求め動き続けることをモットーに活動しております。    </p>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
@@ -108,7 +119,7 @@ scroll-sticky
             <div class="js-sticky">
                 <div class="bg-white js-scale-change">
                     <p class="bg-text">
-                        Experience
+                        This is Me.
                     </p>
                 </div>
             </div>
@@ -125,20 +136,88 @@ slide-scroll
 </div>
 <div class="container">
     <div class="panels-wrap">
-        <section class="panel" id="panel-01" >
-            <h2>card title-01</h2>
+        <section class="panel" id="panel-01" href="#work">
+            <h2>skill</h2>
         </section>
-        <section class="panel" id="panel-02">
-            <h2>card title-02</h2>
+        <section class="panel" id="panel-02" href="#work">
+            <h2>experience</h2>
         </section>
-        <section class="panel" id="panel-03">
-            <h2>card title-3</h2>
+        <section class="panel" id="panel-03" href="#work">
+            <h2>About</h2>
         </section>
-        <section class="panel" id="panel-04">
-            <h2>card title-4</h2>
+        <section class="panel" id="panel-04" href="#work">
+            <h2>work</h2>
         </section>
     </div>
 </div>
+
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="title">ABOUT</h2>
+      <div class="profile">
+        <div class="profile-body">
+          <p>
+            前職では、契約ユーザーとの関係構築に始まり、ユーザーの目標利用開始時期に沿ったスケジュールを即座に提案し定期的にフォロー電話をしておりました。
+          </p>
+          <p>
+           チーム内目標以上の結果を個人で達成するだけでなく、多くのメンバーとコミュニケーションをとることで多くの知見を得ることができ、また得た知見をユーザーとの会話に反映させることで関係構築が深まりました。こういった経験を活かし、コミュニケーション能力も武器にエンジニアとして成長していきたいと考えております。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="experience"></div>
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="title">ABOUT</h2>
+      <div class="profile">
+        <div class="profile-body">
+          <p>
+            前職では、契約ユーザーとの関係構築に始まり、ユーザーの目標利用開始時期に沿ったスケジュールを即座に提案し定期的にフォロー電話をしておりました。
+          </p>
+          <p>
+           チーム内目標以上の結果を個人で達成するだけでなく、多くのメンバーとコミュニケーションをとることで多くの知見を得ることができ、また得た知見をユーザーとの会話に反映させることで関係構築が深まりました。こういった経験を活かし、コミュニケーション能力も武器にエンジニアとして成長していきたいと考えております。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="about"></div>
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="title">ABOUT</h2>
+      <div class="profile">
+        <div class="profile-body">
+          <p>
+            前職では、契約ユーザーとの関係構築に始まり、ユーザーの目標利用開始時期に沿ったスケジュールを即座に提案し定期的にフォロー電話をしておりました。
+          </p>
+          <p>
+           チーム内目標以上の結果を個人で達成するだけでなく、多くのメンバーとコミュニケーションをとることで多くの知見を得ることができ、また得た知見をユーザーとの会話に反映させることで関係構築が深まりました。こういった経験を活かし、コミュニケーション能力も武器にエンジニアとして成長していきたいと考えております。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="work"></div>
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="title">ABOUT</h2>
+      <div class="profile">
+        <div class="profile-body">
+          <p>
+            前職では、契約ユーザーとの関係構築に始まり、ユーザーの目標利用開始時期に沿ったスケジュールを即座に提案し定期的にフォロー電話をしておりました。
+          </p>
+          <p>
+           チーム内目標以上の結果を個人で達成するだけでなく、多くのメンバーとコミュニケーションをとることで多くの知見を得ることができ、また得た知見をユーザーとの会話に反映させることで関係構築が深まりました。こういった経験を活かし、コミュニケーション能力も武器にエンジニアとして成長していきたいと考えております。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 <footer class="footer">
     フッター
 </footer>
