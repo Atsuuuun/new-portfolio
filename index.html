@@ -12,6 +12,25 @@
             <span class="opening__mask"></span>
             <img class="opening__logo" src="img/opening-logo1.png" alt="">
         </div>
+        <div class="mainVisual">
+          <div id="container_mainVisual">
+            <div id="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                    <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none"/>
+                <g>
+                    <use xlink:href="#circlePath" fill="none"/>
+                    <text fill="#272727">
+                        <textPath xlink:href="#circlePath">Let'go Scroll down. Thanks for coming.</textPath>
+                    </text>
+                </g>
+            </svg>
+            </div>
+            </div>
+            
+      </div>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
@@ -50,33 +69,10 @@ menu-content
             <span class="circle-bg"></span>
         </div>
     </header>
-    <section class="section">
-    </section>
+
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="menu-content.js"></script>
-
-<!-----------------------------------
-percentage-circle
-    <main class="container-percentageCircle">
-        <div class="box">
-            <svg width="300" height="300">
-                <defs>
-                    <linearGradient id="paint">
-                        <stop offset="0%" stop-color="white"  />
-                        <stop offset="100%" stop-color="black" />
-                    </linearGradient>
-                </defs>
-                <circle cx="150" cy="150" r="144" fill="none" stroke="url(#paint)" stroke-width="10px" />
-            </svg>
-            <p class="circle-text"><span class="percentage">0</span>%</p>
-        </div>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
-------------------------------------->
-
 
 <!-----------------------------------
 loop-text
@@ -152,61 +148,41 @@ slide-scroll
     </div>
 </div>
 
-<section class="about section" id="about">
-    <div class="container">
-      <h2 class="title">ABOUT</h2>
-      <div class="profile">
-        <div class="profile-body">
-          <p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-----------------------------------
+text-animation
+------------------------------------->
 
-<div class="experience"></div>
-<section class="about section" id="about">
-    <div class="container">
-      <h2 class="title">ABOUT</h2>
-      <div class="profile">
-        <div class="profile-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<div class="about"></div>
-<section class="about section" id="about">
-    <div class="container">
-      <h2 class="title">ABOUT</h2>
-      <div class="profile">
-        <div class="profile-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<div class="work"></div>
-<section class="about section" id="about">
-    <div class="container">
-      <h2 class="title">ABOUT</h2>
-      <div class="profile">
-        <div class="profile-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <div class="title js-text-effect-trigger">
+      <p class="title__en js-text-effect" id="01">Skill</p>
+      <h2 class="title__jp js-text-effect">スキル</h2>
+      <div class="section"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="title js-text-effect-trigger">
+      <p class="title__en js-text-effect" id="02">About</p>
+      <h2 class="title__jp js-text-effect">わたしについて</h2>
+      <div class="section">
+  </div>
+</section>
+<section class="section">
+  <div class="title js-text-effect-trigger">
+      <p class="title__en js-text-effect" id="03">Experience</p>
+      <h2 class="title__jp js-text-effect">経験してきたこと</h2>
+      <div class="section"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="title js-text-effect-trigger">
+      <p class="title__en js-text-effect" id="04">Work</p>
+      <h2 class="title__jp js-text-effect">制作実績</h2>
+      <div class="section"></div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="text-animation.js"></script>
   
 <footer class="footer">
     footer
@@ -215,17 +191,5 @@ slide-scroll
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="slide-scroll.js"></script>
 
-<!-----------------------------------
-card
--------------------------------------
-    <figure class="card1">
-        <img src="..." alt="..." class="card_image" />
-        <figcaption class="card_body">
-            <h2 class="card_title">...</h2>
-            <p class="card_description">...</p>
-        </figcaption>
-    </figure>
-
--->
 
 </body>
