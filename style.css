@@ -41,13 +41,13 @@ opening-animation
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,1);
+  background-color: #000;
   z-index: 1;
 }
 .opening__logo{
   display: block;
   width: 500px;
-  height: 500px;
+  height: 400px;
   z-index: 2;
   clip-path: inset(0 100% 0 0);/*予め切り取り*/
   transform: scale(1.1);/*予め大きくしておく*/
@@ -71,7 +71,7 @@ opening-animation
 }
 
 #circle text{ 
-   font-size: 1.35em;
+   font-size: 1.25em;
   font-weight: bold; 
 }
 
@@ -318,7 +318,7 @@ scroll-text
 -----------------------------------*/
 .container-scrollText {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   background-color: #272727;
   display: flex;
   align-items: center;
@@ -336,6 +336,7 @@ scroll-text
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 3%;
+  padding-bottom: 1em;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0);
   word-break: break-all;
@@ -441,6 +442,16 @@ slide-scroll
   font-size: 250%;
 }
 
+
+.container-border-radius {
+  background-color: #272727;
+  display: inline-block;
+  width: 100%;
+  height: 15vh;
+  border-radius: 50% / 0 0 100% 100%;
+}
+
+
 /*-------------------------
 slide-scroll
 --------------------------*/
@@ -451,10 +462,10 @@ slide-scroll
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15vh;
+  padding: 3%;
 }
-.section:last-child{
-  padding-bottom: 40vh;
+.section-explain{
+  font-size: 1.5em;
 }
 .title__en{
   font-size: 1.8em;
@@ -488,92 +499,9 @@ slide-scroll
   transform: translateX(var(--translateX));
 }
 
-/* ===============================================
-# プロセスイメージ
-=============================================== */
-.process{
-  width: 100%;
-  height: 100vh;
-  padding: 0 40px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-}
-.process__inner{
-  max-width: 1280px;
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  margin: 0 auto;
-}
-.process__arrow{
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  top: 68px;
-  left: 0;
-  background-color: #272727;
-  transform-origin: left center;
-}
-.process__arrow::after{
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #272727;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%,-50%);
-}
-.process__item{
-  font-family: 'Zen Maru Gothic',sans-serif;
-}
-.process__mark{
-  width: 100%;
-  height: 80px;
-  font-size: 18px;
-  color: #272727;
-  font-weight: bold;
-  position: relative;
-}
-.process__circle{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #272727;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateX(-9px);
-}
-.process__bar{
-  display: inline-block;
-  width: 2px;
-  height: 100%;
-  background-color: #272727;
-  border-radius: 50%;
-  transform-origin: left bottom;
-}
-.process__term{
-  font-size: 16px;
-  color: #272727;
-  position: absolute;
-  top: 0;
-  left: 20px;
-}
-.process__text{
-  font-size: 16px;
-  color: #272727;
-  line-height: 1.7;
-  padding: 10px 0 0 20px;
-}
-
-
+/*----------------------------
+footer
+----------------------------*/
 .footer {
   background-color: #fff;
   width: 100%;
