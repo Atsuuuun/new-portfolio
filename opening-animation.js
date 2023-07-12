@@ -13,7 +13,7 @@ openingTL
     duration:2,
     ease:"power4.inOut",
 })
-.to('.loop3',{//背景画像が元の大きさへ戻る
+.to('.mainVisual img',{//背景画像が元の大きさへ戻る
     scale:1,
     duration:2,
     ease:"power4.out",

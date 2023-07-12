@@ -17,6 +17,6 @@ btn.addEventListener('click',function(){
         headerMenu.classList.toggle('is-active');
         menuTL
         .to('.circle-bg',{scale:scale})
-        .fromTo('.header-lists li',{autoAlpha:0,y:20},{autoAlpha:1,y:0,stagger:.08})
+        .fromTo('.header-lists li',{autoAlpha:0,y:20},{autoAlpha:1,y:0,stagger:.04})
     }
 })
