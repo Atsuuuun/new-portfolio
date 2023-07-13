@@ -5,8 +5,8 @@ textEffectTrigger.forEach((trigger)=>{
     let textEffectTL = gsap.timeline();
     let target = trigger.querySelectorAll('.js-text-effect');
     textEffectTL
-    .to(target,{autoAlpha:1,y:0,duration:.4,stagger:.1})
-    .to(target,{'--translateX':'101%',duration:1.0,stagger:.1})
+    .to(target,{autoAlpha:1,y:0,duration:1.0,stagger:.1})
+    .to(target,{'--translateX':'101%',duration:1.5,stagger:.1})
     ScrollTrigger.create({
         trigger:trigger,
         start:'center bottom',
