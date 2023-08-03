@@ -125,42 +125,6 @@ opening-animation
     to { transform: rotate(0); }
 }
 
-
-
-/*------------------------------------
-progress-bar
-------------------------------------*/
-.scroll-indicator {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: none;
-  height: 5px;
-  left: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-.scroll-indicator::-webkit-progress-bar {
-  background: transparent;
-}
-
-.scroll-indicator::-webkit-progress-value {
-  background-image: linear-gradient(to bottom right, #dbd9d9 0%, #a6a6a6 8.1%, #a7a7a7 15.5%, #b2b2b2 22.5%, #8f8f8f 29%, #8b8b8b 35.3%, #898989 41.2%, #878787 47.1%, #838383 52.9%, #7d7d7d 58.8%, #656565 64.7%, #363636 71%, #292929 77.5%, #272727 84.5%, #111111 91.9%, #000000 100%);
-  background-attachment: fixed;
-  border-radius: 0.4rem;
-}
-
-.scroll-indicator::-moz-progress-bar {
-  background-image: linear-gradient(to bottom right, #dbd9d9 0%, #a6a6a6 8.1%, #a7a7a7 15.5%, #b2b2b2 22.5%, #8f8f8f 29%, #8b8b8b 35.3%, #898989 41.2%, #878787 47.1%, #838383 52.9%, #7d7d7d 58.8%, #656565 64.7%, #363636 71%, #292929 77.5%, #272727 84.5%, #111111 91.9%, #000000 100%);
-  background-attachment: fixed;
-  border-radius: 0.4rem;
-}
-
 /*-----------------------------------
 menu-content
 -----------------------------------*/
@@ -202,50 +166,6 @@ menu-content
   transform: scale(0);
 }
 
-/*メニュー内のスタイル*/
-.header-menu{
-  max-width: 500px;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  z-index: 98;
-}
-
-.header-menu.is-active{
-  opacity: 1;
-  visibility: visible;
-}
-
-.header-lists{
-  width: 100%;
-  height: 15%;
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.header-lists a{
-  color: #fff;
-  font-size: 2em;
-  font-weight: bold;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(20px);
-
-  color: transparent;
-  -webkit-text-stroke: 0.03em #fff;
-}
-.header-lists a + a{
-  margin-top: 10%;
-}
-
 /*-----------------------------------
 loop-text
 -----------------------------------*/
@@ -268,10 +188,6 @@ loop-text
   white-space: nowrap;
   padding-right: 25px;
   padding-left: 25px;
-  /*-塗りつぶしの場合-
-  color: rgb(250, 130, 35);
-  */
-  /* ＜枠のみの場合＞　*/
   color: #fff;
   text-shadow: 1em #000;
   -webkit-text-stroke: 0.01em #000;
@@ -317,7 +233,7 @@ scroll-text
 -----------------------------------*/
 .container-scrollText {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: #272727;
   display: flex;
   align-items: center;
@@ -328,10 +244,10 @@ scroll-text
 }
 
 .scroll-text {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: #b2b2b2;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 2.5rem;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 3%;
