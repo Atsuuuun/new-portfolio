@@ -421,3 +421,12 @@ h2 .credit{
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
+.right-scroll {
+  width: 15%;
+  height: 15%;
+  right: 3%;
+  size: 6%;
+  position: absolute;
+  z-index: 5;
+}
