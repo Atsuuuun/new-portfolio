@@ -6,6 +6,47 @@ body {
   overflow-x: hidden;
 }
 
+/*-----------------------------------
+menu-content
+-----------------------------------*/
+.menu-container {
+  width: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+/*=======ここまでは見た目を整えるための記述======*/
+/*ボタン*/
+.header-menu-trigger {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: none;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  transition: background-color 0.5s;
+}
+
+.header-menu-trigger.is-active {
+  background-color: #fff;
+}
+
+.circle-bg {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: #FF6347;
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  z-index: -1;
+  transform: scale(0);
+}
+
 section {
   padding: 10vw;
   height: 100%;
