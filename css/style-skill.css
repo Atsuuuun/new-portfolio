@@ -52,8 +52,8 @@ opening-animation
 
 .opening__logo {
   display: block;
-  width: 500px;
-  height: 650px;
+  width: 600px;
+  height: 500px;
   z-index: 2;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0); /*予め切り取り*/
@@ -276,7 +276,7 @@ a {
   padding-right: 2%;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .swiper-slide {
