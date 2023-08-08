@@ -52,8 +52,8 @@ opening-animation
 
 .opening__logo {
   display: block;
-  width: 600px;
-  height: 500px;
+  width: 150px;
+  height: 150px;
   z-index: 2;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0); /*予め切り取り*/
