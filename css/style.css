@@ -465,19 +465,7 @@ skill.html
   transform: translateX(var(--translateX));
 }
 
-/*----------------------------
-footer
-----------------------------*/
-.footer {
-  background-color: #fff;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+
 
 
 
@@ -498,23 +486,6 @@ footer
 
 h1 {
   font-size: clamp(3rem, 7vw, 7rem);
-}
-
-.firstContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: rgba(255, 179, 0, 0.6901960784);
-  overflow-x: hidden;
-}
-
-.lastContainer {
-  display: flex;
-  height: 100vh;
-  background: rgba(255, 179, 0, 0.6901960784);
-  overflow-x: hidden;
 }
 
 .container.single {
@@ -710,4 +681,115 @@ h1 {
 }
 .container.double .panel.height--extra-tall {
   height: 100%;
+}
+
+/*----------------------------------
+before-footer
+----------------------------------*/
+.spacer{
+  width: 100%;
+  height: 35vh;
+}
+.text{
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #272727;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  overflow-x: hidden;
+}
+.text span{
+  transition: color .5s;
+}
+.text span.is-active{
+  color: #FF6347;
+}
+.text img {
+  width: 7rem;
+  height: 7rem;
+}
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ここまでは見た目を整える記述 */
+.js-move-text{ 
+  transform: translateX(50%);
+}
+
+/*----------------------------
+footer
+----------------------------*/
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #4b5564;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  background-color: #b2b2b2;
+  padding: 2rem;
+  font-size: 15px;
+  color: #4b5564;
+  background: #b2b2b2;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.footer__navi-heading {
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.footer__navi li {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
