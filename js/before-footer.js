@@ -1,13 +1,13 @@
 gsap.fromTo('.js-move-text',{x:'250%'},{x:'0%',scrollTrigger:{
     trigger:'.js-move-text',
     start:'top bottom',
-    end:'center 30%',
+    end:'center 100%',
     scrub:1.5,
 }});
 
-gsap.to('.js-move-text span',{color:'#FF6347',duration:.25,scrollTrigger:{
+gsap.to('.js-move-text span',{color:'#FF6347',duration:.15,scrollTrigger:{
     trigger:'.js-move-text span',
-    start:'center center',
+    start:'center 50%',
     toggleActions:'play none none reverse'
 }});
 
